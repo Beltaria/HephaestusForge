@@ -1,0 +1,3 @@
+name: HephaestusForge
+version: '${project.version}'
+main: me.bluedyaishela.hephaestusforge.HephaestusForge
