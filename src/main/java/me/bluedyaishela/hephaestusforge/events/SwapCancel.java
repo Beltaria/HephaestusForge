@@ -9,11 +9,10 @@ public class SwapCancel implements Listener {
     @EventHandler
     private void onPlayerInventoryClick(InventoryClickEvent event)
     {
-        event.setCancelled(true);
-//        InventoryType.SlotType slotType = event.getSlotType();
-//        if (slotType == InventoryType.SlotType.ARMOR || slotType == InventoryType.SlotType.QUICKBAR)
-//        {
-//            event.setCancelled(true);
-//        }
+        InventoryType.SlotType slotType = event.getSlotType();
+        if (slotType == InventoryType.SlotType.ARMOR || slotType == InventoryType.SlotType.QUICKBAR)
+        {
+            event.setCancelled(true);
+        }
     }
 }
